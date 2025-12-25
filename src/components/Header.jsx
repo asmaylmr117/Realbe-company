@@ -98,7 +98,7 @@ const Header = ({ scrollToSection }) => {
                                         setMenuOpen(false);
                                     }}
                                     className={`text-left transition py-3 px-4 w-full rounded-lg ${activeSection === item.id
-                                            ? 'text-gold bg-gold'
+                                            ? 'text-gold bg-amber-200 '
                                             : 'text-white hover:text-gold hover:bg-white/5'
                                         }`}
                                 >
