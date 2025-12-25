@@ -52,7 +52,7 @@ const Footer = () => {
                 <h4 className="text-xs text-gray-400 mb-2 tracking-wider">WHATSAPP</h4>
                 <p className="text-sm mb-1">
                   <a
-                    href="https://wa.me/966582989417"
+                    href="https://wa.me/+966582989417"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:underline"
@@ -65,7 +65,7 @@ const Footer = () => {
               </div>
               <div>
                 <h4 className="text-xs text-gray-400 mb-2 tracking-wider">SEND A MESSAGE</h4>
-                <p className="text-sm">info@reelstudio.net</p>
+                <p className="text-sm">info@realbe.net</p>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
             <p>
-              Copyright © 2025 Reelbe All rights reserved. No part of this website could be replicated without prior permission of Reelbe.
+              Copyright © 2025 Realbe All rights reserved. No part of this website could be replicated without prior permission of Realbe.
             </p>
             <p>
               This website is designed by{' '}
