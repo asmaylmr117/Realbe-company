@@ -72,13 +72,13 @@ const Header = ({ scrollToSection }) => {
                 {/* Mobile Menu Button */}
                 <button
                     onClick={() => setMenuOpen(!menuOpen)}
-                    className="md:hidden flex flex-col items-center gap-2 text-amber-600"
+                    className="md:hidden flex flex-col items-center gap-2 text-gold"
                 >
                     {/* Hamburger Lines */}
                     <div className="flex flex-col gap-1">
-                        <span className="w-6 h-[2px] bg-amber-600"></span>
-                        <span className="w-4 h-[2px] bg-amber-600 self-end"></span>
-                        <span className="w-5 h-[2px] bg-amber-600 self-end "></span>
+                        <span className="w-6 h-[2px] bg-gold "></span>
+                        <span className="w-4 h-[2px] bg-gold self-end"></span>
+                        <span className="w-5 h-[2px] bg-gold self-end "></span>
                     </div>
 
                     
