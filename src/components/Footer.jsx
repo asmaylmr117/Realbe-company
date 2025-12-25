@@ -115,10 +115,10 @@ const Footer = () => {
             <p>
               This website is designed by{' '}
               <a
-                href="#"
+                href="https://wa.me/+201507135815"
                 className="text-amber-600 hover:text-amber-500 transition-colors"
               >
-                elzoghby.com
+               Devnity code
               </a>
             </p>
           </div>
