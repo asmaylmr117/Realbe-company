@@ -16,7 +16,7 @@ const Projects = () => {
     {
       id: 2,
       image: "./IMG/projects/2new.jpg",
-      title: "Admins Tration Design",
+      title: "Administrative Design",
       description: "Luxurious interior design with a simple and flexible neoclassical style in terms of color."
     },
     {
@@ -70,7 +70,7 @@ const Projects = () => {
         <h2 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-bold text-center mb-3 sm:mb-4 text-white">
           RECENT DESIGNS
         </h2>
-        <div className="w-20 sm:w-24 lg:w-32 h-1 bg-amber-600 mx-auto"></div>
+        <div className="w-20 sm:w-24 lg:w-32 h-1 bg-gold mx-auto"></div>
       </div>
 
       <div className="relative">
@@ -153,7 +153,7 @@ const Projects = () => {
               onClick={() => setCurrentIndex(index)}
               className={`h-1 transition-all duration-300 ${
                 index === currentIndex
-                  ? 'w-8 sm:w-10 md:w-12 lg:w-14 bg-amber-600'
+                  ? 'w-8 sm:w-10 md:w-12 lg:w-14 bg-gold'
                   : 'w-3 sm:w-4 md:w-5 lg:w-6 bg-gray-600 hover:bg-gray-400'
               }`}
             />
@@ -163,7 +163,7 @@ const Projects = () => {
 
       {/* Current slide indicator */}
       <div className="container mx-auto px-4 mt-3 sm:mt-4 text-center text-gray-400 text-xs sm:text-sm">
-        <span className="text-amber-600 font-semibold">{currentIndex + 1}</span> / {maxIndex + 1} 
+        <span className="text-gold font-semibold">{currentIndex + 1}</span> / {maxIndex + 1} 
         <span className="ml-2 text-gray-500">({projects.length} projects total)</span>
       </div>
     </section>

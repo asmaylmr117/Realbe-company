@@ -47,7 +47,7 @@ const HomeSlider = ({ scrollToSection }) => {
     if (isAutoPlaying) {
       autoPlayIntervalRef.current = setInterval(() => {
         setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-      }, 5000); // 5 seconds
+      }, 5000); 
     }
 
     return () => {
@@ -145,10 +145,10 @@ const HomeSlider = ({ scrollToSection }) => {
                 }}
               >
                 
-                <div className="w-12 xs:w-14 sm:w-16 md:w-20 h-0.5 sm:h-1 bg-amber-600 mb-4 xs:mb-5 sm:mb-6"></div>
+                <div className="w-12 xs:w-14 sm:w-16 md:w-20 h-0.5 sm:h-1 bg-gold mb-4 xs:mb-5 sm:mb-6"></div>
 
                 
-                <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-amber-600 mb-4 xs:mb-5 sm:mb-6 leading-tight xs:leading-snug sm:leading-normal">
+                <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-gold mb-4 xs:mb-5 sm:mb-6 leading-tight xs:leading-snug sm:leading-normal">
                   {slide.title}
                 </h1>
 
@@ -160,7 +160,7 @@ const HomeSlider = ({ scrollToSection }) => {
                 
                 <button
                   onClick={() => scrollToSection('projects')}
-                  className="bg-transparent text-4xl hover:bg-amber-600 transition-all duration-300 flex items-center gap-2 text-white px-4 xs:px-5 sm:px-6 md:px-8 py-2 xs:py-2.5 sm:py-3 text-sm xs:text-base sm:text-lg group"
+                  className="bg-transparent text-4xl hover:bg-gold transition-all duration-300 flex items-center gap-2 text-white px-4 xs:px-5 sm:px-6 md:px-8 py-2 xs:py-2.5 sm:py-3 text-sm xs:text-base sm:text-lg group"
                 >
                   PROJECTS
                   <span className="text-lg xs:text-xl sm:text-2xl transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -177,7 +177,7 @@ const HomeSlider = ({ scrollToSection }) => {
               key={index}
               onClick={() => handleSlideChange(index)}
               className={`text-right transition-all duration-300 ${index === currentSlide
-                ? 'text-amber-600 scale-110 sm:scale-125 font-bold'
+                ? 'text-gold scale-110 sm:scale-125 font-bold'
                 : 'text-gray-400 hover:text-gray-200'
                 }`}
             >
@@ -200,7 +200,7 @@ const HomeSlider = ({ scrollToSection }) => {
         {isAutoPlaying && (
           <div className="absolute bottom-20 sm:bottom-24 left-1/2 transform -translate-x-1/2 w-32 sm:w-40 h-1 bg-gray-600 rounded-full overflow-hidden">
             <div 
-              className="h-full bg-amber-600 rounded-full animate-progress"
+              className="h-full bg-gold rounded-full animate-progress"
               style={{
                 animation: 'progress 5s linear infinite'
               }}
@@ -209,12 +209,12 @@ const HomeSlider = ({ scrollToSection }) => {
         )}
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 text-white text-center">
-          <div className="animate-bounce">
-            <div className="text-xs mb-2">SCROLL</div>
-            <div className="w-px h-10 sm:h-12 bg-white mx-auto"></div>
-          </div>
-        </div>
+        <div className="absolute bottom-16 sm:bottom-24 left-1/2 transform -translate-x-1/2 text-white text-center">
+  <div className="animate-bounce">
+    <div className="text-xs mb-2">SCROLL</div>
+    <div className="w-px h-10 sm:h-12 bg-white mx-auto"></div>
+  </div>
+</div>
       </div>
 
       <style jsx>{`

@@ -9,7 +9,7 @@ const Team = () => {
       name: "Khalid Edris",
       position: "CEO",
       image: "./IMG/projects/IMG-20251220-WA0031.jpg",
-      bio: "Welcome to our world, where beautiful spaces come alive! Since 2025, our founder, Khalid Edris, has been creating stunning interiors and architectural designs as well as offering valuable tips and advice in the field in our main branch in Saudi Arabia and other countries. With a keen eye for detail and a commitment to quality, we have built a strong reputation as a top-notch group of interior and architectural designers.",
+      bio: "Welcome to our world, where beautiful spaces come alive! Since 2022, our founder, Khalid Edris, has been creating stunning interiors and architectural designs as well as offering valuable tips and advice in the field in our main branch in Saudi Arabia and other countries. With a keen eye for detail and a commitment to quality, we have built a strong reputation as a top-notch group of interior and architectural designers.",
       social: {
         instagram: "#",
         facebook: "#",
@@ -41,14 +41,14 @@ const Team = () => {
           <div className="flex flex-col lg:flex-row min-h-[500px] sm:min-h-[550px] lg:min-h-[600px]">
             
             
-            <div className="lg:hidden relative h-64 sm:h-72 md:h-80 bg-white/20 backdrop-blur-sm">
-              <div className="absolute inset-0 flex items-center justify-center p-4">
+            <div className="lg:hidden relative h-80 sm:h-96 md:h-[500px]  bg-white/20 backdrop-blur-sm">
+              
                 <img 
                   src={currentMember.image} 
                   alt={currentMember.name}
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
-              </div>
+             
             </div>
             
             {/* Left Side - Information with semi-transparent background */}
@@ -57,7 +57,7 @@ const Team = () => {
             >
               <div className="max-w-xl lg:pr-8">
                 <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-white mb-6 lg:mb-12">
-                  Our Team
+                 Founder 
                 </h2>
                 
                 <div className="space-y-4 sm:space-y-6">
@@ -65,7 +65,7 @@ const Team = () => {
                     <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold text-white mb-2">
                       {currentMember.name}
                     </h3>
-                    <p className="text-amber-500 text-base sm:text-lg lg:text-2xl font-medium">
+                    <p className="text-gold text-base sm:text-lg lg:text-2xl font-medium">
                       {currentMember.position}
                     </p>
                   </div>
@@ -105,14 +105,12 @@ const Team = () => {
             
             
             <div className="hidden lg:flex flex-1 relative bg-white/20 backdrop-blur-sm">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative w-full h-full">
-                  <img 
-                    src={currentMember.image} 
-                    alt={currentMember.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+              <div className="absolute inset-0 p-8 flex items-center justify-center">
+                <img 
+                  src={currentMember.image} 
+                  alt={currentMember.name}
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
           </div>
@@ -143,8 +141,6 @@ const Team = () => {
       </div>
       
     </section>
-    
-
   );
 };
 

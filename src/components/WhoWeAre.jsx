@@ -72,7 +72,7 @@ const WhoWeAre = () => {
           {/* Right Side - Counter */}
           <div className="flex flex-col items-center lg:items-end">
             <div className="text-center lg:text-right">
-              <div className="text-8xl md:text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-gray-200 to-gray-400 mb-4" style={{ WebkitTextStroke: '2px #e08f14ff' }}>
+              <div className="text-8xl md:text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-gray-200 to-gray-400 mb-4" style={{ WebkitTextStroke: '2px #B08D2E' }}>
                 {count}+
               </div>
               <div className="flex items-center gap-2 justify-center lg:justify-end text-gray-700 font-semibold">

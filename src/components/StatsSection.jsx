@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 
 const stats = [
-  { value: 2020, label: "IN BUSINESS SINCE" },
+  { value: 2022, label: "IN BUSINESS SINCE" },
   { value: 410, label: "PROJECTS COMPLETED" },
   { value: 305, label: "SATISFIED CLIENTS" },
   { value: 15, label: "COUNTRIES", suffix: "+" },
@@ -78,7 +78,7 @@ export default function StatsSection() {
                   startCounting={isVisible}
                 />
               </h3>
-              <p className="mt-2 text-sm tracking-widest text-amber-600">
+              <p className="mt-2 text-sm tracking-widest text-gold">
                 {item.label}
               </p>
             </div>

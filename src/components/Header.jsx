@@ -44,9 +44,9 @@ const Header = ({ scrollToSection }) => {
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                 <div className="flex items-center gap-2">
                     <img
-                        src=".\IMG\home\Capture.jpg"
+                        src=".\IMG\Logo.jpg"
                         alt="Logo"
-                        className="w-25 h-15 object-contain"
+                        className="w-15 h-14 object-cover "
                     />
                 </div>
 
@@ -56,14 +56,14 @@ const Header = ({ scrollToSection }) => {
                         <div key={item.id} className="relative">
                             <button
                                 onClick={() => scrollToSection(item.id)}
-                                className={`hover:text-amber-600 transition pb-3 ${activeSection === item.id ? 'text-amber-600' : 'text-white'
+                                className={`hover:text-gold transition pb-3 ${activeSection === item.id ? 'text-gold' : 'text-white'
                                     }`}
                             >
                                 {item.label}
                             </button>
 
                             {activeSection === item.id && (
-                                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-amber-600"></div>
+                                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gold"></div>
                             )}
                         </div>
                     ))}
@@ -78,12 +78,10 @@ const Header = ({ scrollToSection }) => {
                     <div className="flex flex-col gap-1">
                         <span className="w-6 h-[2px] bg-amber-600"></span>
                         <span className="w-4 h-[2px] bg-amber-600 self-end"></span>
+                        <span className="w-5 h-[2px] bg-amber-600 self-end "></span>
                     </div>
 
-                    {/* Menu Text */}
-                    <span className="text-xs tracking-widest text-gray-400">
-                        MENU
-                    </span>
+                    
                 </button>
 
             </div>
@@ -100,14 +98,14 @@ const Header = ({ scrollToSection }) => {
                                         setMenuOpen(false);
                                     }}
                                     className={`text-left transition py-3 px-4 w-full rounded-lg ${activeSection === item.id
-                                            ? 'text-amber-600 bg-amber-600/10'
-                                            : 'text-white hover:text-amber-600 hover:bg-white/5'
+                                            ? 'text-gold bg-gold'
+                                            : 'text-white hover:text-gold hover:bg-white/5'
                                         }`}
                                 >
                                     <div className="flex items-center justify-between">
                                         <span>{item.label}</span>
                                         {activeSection === item.id && (
-                                            <div className="w-2 h-2 bg-amber-600 rounded-full"></div>
+                                            <div className="w-2 h-2 bg-gold rounded-full"></div>
                                         )}
                                     </div>
                                 </button>

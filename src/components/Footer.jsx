@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Youtube, Linkedin, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Youtube, Linkedin, Instagram, Twitter, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const companyLinks = [
@@ -11,11 +11,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-
     { name: 'Instagram Reelbe', icon: Instagram, url: 'https://www.instagram.com/realbestudio?igsh=cDA4NWY2NWh4eXhs' },
-    { name: 'Instagram Khalid ', icon: Instagram, url: 'https://www.instagram.com/khaaleed02?igsh=MWRhMWEwbjlmZDRmdQ==' },
-    { name: 'Twitter', icon: Twitter, url: 'https://x.com/KhalidEdris0' }
-   
+    { name: 'Instagram Khalid', icon: Instagram, url: 'https://www.instagram.com/khaaleed02?igsh=MWRhMWEwbjlmZDRmdQ==' },
+    { name: 'Twitter', icon: Twitter, url: 'https://x.com/KhalidEdris0' },
+    { name: 'WhatsApp', icon: MessageCircle, url: 'https://wa.me/+966582989417' }
   ];
 
   return (
@@ -28,9 +27,9 @@ const Footer = () => {
           <div className="lg:col-span-2 col-span-1">
             <div className="flex items-center gap-2">
               <img
-                src=".\IMG\home\Capture.jpg"
+                src=".\IMG\Logo.jpg"
                 alt="Logo"
-                className="w-25 h-15 object-contain"
+                className="w-15 h-14 object-contain"
               />
             </div>
 
@@ -40,7 +39,7 @@ const Footer = () => {
                 Get in touch to design 
               </h3>
               <p className="text-2xl md:text-3xl">
-                <span className="text-amber-600">administration interior</span>
+                <span className="text-gold">Residential</span>
               </p>
             </div>
 
@@ -76,7 +75,7 @@ const Footer = () => {
                   <li key={index}>
                     <a
                       href={`#${link.id}`}
-                      className="text-sm text-gray-300 hover:text-amber-600 transition-colors duration-300"
+                      className="text-sm text-gray-300 hover:text-gold transition-colors duration-300"
                     >
                       {link.label}
                     </a>
@@ -93,7 +92,9 @@ const Footer = () => {
                   <li key={index}>
                     <a
                       href={social.url}
-                      className="flex items-center gap-2 text-sm text-gray-300 hover:text-amber-600 transition-colors duration-300"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm text-gray-300 hover:text-gold transition-colors duration-300"
                     >
                       <social.icon size={16} />
                       <span>{social.name}</span>
@@ -114,8 +115,8 @@ const Footer = () => {
             <p>
               This website is designed by{' '}
               <a
-                href="https://wa.me/+201507135815"
-                className="text-amber-600 hover:text-amber-500 transition-colors"
+                href="https://wa.me/+966582989417"
+                className="text-gold hover:text-gold transition-colors"
               >
                Devnity code
               </a>
