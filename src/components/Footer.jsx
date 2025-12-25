@@ -61,7 +61,7 @@ const Footer = () => {
               </div>
               <div>
                 <h4 className="text-xs text-gray-400 mb-2 tracking-wider">SEND A MESSAGE</h4>
-                <p className="text-sm">info@realbe.net</p>
+                <p className="text-sm">khalidedris27@gmail.com</p>
               </div>
             </div>
           </div>
