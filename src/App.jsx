@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import WhatWeDo from './components/WhatWeDo';
 import Team from './components/Team';
 import Statistics from './components/Statistics';
-import Portfolio from './components/portfolio';
+import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 const App = () => {
