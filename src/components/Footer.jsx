@@ -110,7 +110,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
             <p>
-              Copyright © 2025 Reel Studio. All rights reserved. No part of this website could be replicated without prior permission of Reel Studio.
+              Copyright © 2025 Reelbe All rights reserved. No part of this website could be replicated without prior permission of Reelbe.
             </p>
             <p>
               This website is designed by{' '}
