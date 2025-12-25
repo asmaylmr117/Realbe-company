@@ -11,23 +11,21 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', icon: Facebook, url: '#' },
-    { name: 'Behance', icon: Youtube, url: '#' },
+
     { name: 'Instagram Reelbe', icon: Instagram, url: 'https://www.instagram.com/realbestudio?igsh=cDA4NWY2NWh4eXhs' },
-    { name: 'Instagram Khalid Edris', icon: Instagram, url: 'https://www.instagram.com/khaaleed02?igsh=MWRhMWEwbjlmZDRmdQ==' },
-    { name: 'Twitter', icon: Twitter, url: 'https://x.com/KhalidEdris0' },
-    { name: 'Youtube', icon: Youtube, url: '#' },
-    { name: 'Linkedin', icon: Linkedin, url: '#' }
+    { name: 'Instagram Khalid ', icon: Instagram, url: 'https://www.instagram.com/khaaleed02?igsh=MWRhMWEwbjlmZDRmdQ==' },
+    { name: 'Twitter', icon: Twitter, url: 'https://x.com/KhalidEdris0' }
+   
   ];
 
   return (
     <footer className="bg-black text-white py-12 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-12">
 
           {/* Logo and CTA Section */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 col-span-1">
             <div className="flex items-center gap-2">
               <img
                 src=".\IMG\home\Capture.jpg"
@@ -39,10 +37,10 @@ const Footer = () => {
             {/* Call to Action */}
             <div className="mb-6">
               <h3 className="text-2xl md:text-2xl font-bold mb-2">
-                Get in touch
+                Get in touch to design 
               </h3>
               <p className="text-2xl md:text-3xl">
-                to design <span className="text-amber-600">administration interior</span>
+                <span className="text-amber-600">administration interior</span>
               </p>
             </div>
 
@@ -60,8 +58,6 @@ const Footer = () => {
                     +966 58 298 9417
                   </a>
                 </p>
-
-                
               </div>
               <div>
                 <h4 className="text-xs text-gray-400 mb-2 tracking-wider">SEND A MESSAGE</h4>
@@ -70,39 +66,42 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Company Links */}
-          <div>
-            <h4 className="text-sm font-bold mb-4 tracking-wider">COMPANY</h4>
-            <ul className="space-y-3">
-              {companyLinks.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={`#${link.id}`}
-                    className="text-sm text-gray-300 hover:text-amber-600 transition-colors duration-300"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Company Links and Social Links - Side by Side on Mobile */}
+          <div className="grid grid-cols-2 gap-8 lg:col-span-2 lg:grid-cols-2">
+            {/* Company Links */}
+            <div>
+              <h4 className="text-sm font-bold mb-4 tracking-wider">COMPANY LINKS</h4>
+              <ul className="space-y-3">
+                {companyLinks.map((link, index) => (
+                  <li key={index}>
+                    <a
+                      href={`#${link.id}`}
+                      className="text-sm text-gray-300 hover:text-amber-600 transition-colors duration-300"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          {/* Social Links */}
-          <div>
-            <h4 className="text-sm font-bold mb-4 tracking-wider">FOLLOW US</h4>
-            <ul className="space-y-3">
-              {socialLinks.map((social, index) => (
-                <li key={index}>
-                  <a
-                    href={social.url}
-                    className="flex items-center gap-2 text-sm text-gray-300 hover:text-amber-600 transition-colors duration-300"
-                  >
-                    <social.icon size={16} />
-                    <span>{social.name}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
+            {/* Social Links */}
+            <div>
+              <h4 className="text-sm font-bold mb-4 tracking-wider">FOLLOW US</h4>
+              <ul className="space-y-3">
+                {socialLinks.map((social, index) => (
+                  <li key={index}>
+                    <a
+                      href={social.url}
+                      className="flex items-center gap-2 text-sm text-gray-300 hover:text-amber-600 transition-colors duration-300"
+                    >
+                      <social.icon size={16} />
+                      <span>{social.name}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
 
