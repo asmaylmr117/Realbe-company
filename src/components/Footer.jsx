@@ -115,7 +115,7 @@ const Footer = () => {
             <p>
               This website is designed by{' '}
               <a
-                href="https://wa.me/+966582989417"
+                href="https://wa.me/+201507135815"
                 className="text-gold hover:text-gold transition-colors"
               >
                Devnity code

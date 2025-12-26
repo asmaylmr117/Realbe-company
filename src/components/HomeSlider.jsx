@@ -38,7 +38,7 @@ const HomeSlider = ({ scrollToSection }) => {
     {
       image: "/IMG/home/06.jpg",
       title: "PERFECTION",
-      subtitle: "We design to make you feel luxurious and sophisticated through modern, classic designs in a French European style."
+      subtitle: "We'll suddenly surprise you with a special space mode that adds a positive touch to the work."
     }
   ];
 
